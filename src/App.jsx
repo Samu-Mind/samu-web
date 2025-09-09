@@ -8,7 +8,6 @@ import Works from './sections/works.jsx'
 import Ikigai from './sections/ikigai.jsx'
 import Contact from './sections/contact.jsx'
 // Components
-import Navbar from './components/navbar.jsx'
 import Footer from './components/footer.jsx'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <div className="font-sans">
-      <Navbar />
       <Home />
       <Works />
       <About />
