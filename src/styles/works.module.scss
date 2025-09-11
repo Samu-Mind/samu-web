@@ -1,0 +1,17 @@
+.sectionWorks{
+    text-align: start;
+    color: white;
+    height: 100vh;
+    width: 200%;
+    background-color: #8f4f4f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-size: 3rem;
+        font-weight: 600;
+        color: #e4e4e4;
+        text-align: center;
+    }
+}

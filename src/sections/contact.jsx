@@ -1,8 +1,10 @@
-// src/sections/Contact.jsx
+import styles from '../styles/contact.module.scss';
+
+
 export default function Contact() {
   return (
-    <section id="contact" className="h-screen flex items-center justify-center bg-purple-50">
-      <h2 className="text-3xl font-semibold">Hablemos</h2>
+    <section id="contact" className={styles.sectionContact}>
+      <h2>Hablemos</h2>
     </section>
   );
 }
