@@ -1,8 +1,68 @@
-.navSection {
-  padding: 1rem;
+
+  /* Menu Button */
+.menuBtn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  background: unset;
   color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 110;
+}
+
+/* Full-screen overlay */
+.overlay {
+  position: fixed;
+  inset: 0; /* top:0; left:0; right:0; bottom:0 */
+  background: rgba(80, 80, 80, 0.95); /* grey window */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  position: sticky;
-  top: 0;}
+  justify-content: center;
+  z-index: 105;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menu links */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu li {
+  margin: 1.5rem 0;
+}
+
+.menu a {
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

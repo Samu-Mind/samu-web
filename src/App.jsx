@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 // Sections
+import Navbar from './components/navbar.jsx'
 import Home from './sections/home.jsx'
 import About from './sections/about.jsx'
 import Works from './sections/works.jsx'
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div className="font-sans">
-      <Home />
+      <Navbar />
+      <Home/>
       <Works />
       <About />
       <Ikigai />

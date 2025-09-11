@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import videoBg from "../assets/videoS/japan-nature.mp4";
-import Navbar from "../components/Navbar";
+
 
 import styles from "../styles/home.module.scss";
 
 
 export default function Home() {
   return (
-    <section className={styles.homeSection}>
+    <section id="home" className={styles.homeSection}>
       {/* 🎥 Video de fondo */}
       <video
         src={videoBg}
@@ -19,9 +19,6 @@ export default function Home() {
 
       {/* 🌓 Overlay oscuro para contraste */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-
-      {/* 🔘 Navbar importado */}
-      <Navbar />
 
       {/* ✨ Contenido */}
       <div className={styles.homeTittle}>
