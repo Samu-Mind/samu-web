@@ -38,9 +38,16 @@ body::-webkit-scrollbar {
 }
 
 
-h1 {
-  font-size: 3.2em;
+h1,h2 {
   line-height: 1.1;
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+p {
+  font-family: inherit;
 }
 
 button {

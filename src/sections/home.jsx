@@ -24,9 +24,8 @@ export default function Home() {
       <Navbar />
 
       {/* ✨ Contenido */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <div className={styles.homeTittle}>
         <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -35,7 +34,6 @@ export default function Home() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-2xl font-light"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
